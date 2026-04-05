@@ -26,7 +26,7 @@
   --font-body:    'Raleway', 'Segoe UI', sans-serif;
 
   --max-width:    1200px;
-  --header-h:     120px;
+  --header-h:     160px;
 }
 
 /* --- Reset --- */
@@ -98,7 +98,7 @@ p + p { margin-top: 1em; }
   gap: 12px;
   text-decoration: none;
 }
-.logo-badge { height: 110px; width: auto; }
+.logo-badge { height: 150px; width: auto; }
 .logo-text {
   /* Hidden — badge logo already contains the name */
   position: absolute;
@@ -187,15 +187,18 @@ p + p { margin-top: 1em; }
 .hero-slide.active {
   opacity: 1;
 }
+.hero-slide--house {
+  background-position: center 75% !important;
+}
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(10, 8, 6, 0.9) 0%,
-    rgba(10, 8, 6, 0.35) 40%,
-    rgba(10, 8, 6, 0.08) 70%,
-    rgba(10, 8, 6, 0.15) 100%
+    rgba(10, 8, 6, 0.85) 0%,
+    rgba(10, 8, 6, 0.25) 30%,
+    rgba(10, 8, 6, 0.05) 60%,
+    rgba(10, 8, 6, 0.1) 100%
   );
   z-index: -1;
 }

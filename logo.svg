@@ -50,38 +50,69 @@
       <polygon points="234,190 242,160 250,190"/>
     </g>
 
-    <!-- Cabin main -->
-    <g>
-      <!-- Main building -->
-      <rect x="110" y="172" width="55" height="28" fill="#F0EBE5"/>
-      <!-- Roof -->
-      <path d="M105 172 L137.5 148 L170 172 Z" fill="#F0EBE5"/>
-      <path d="M108 172 L137.5 152 L167 172 Z" fill="#3A352F"/>
-      <!-- Side building -->
-      <rect x="165" y="178" width="35" height="22" fill="#F0EBE5"/>
-      <!-- Side roof -->
-      <path d="M162 178 L182.5 160 L203 178 Z" fill="#F0EBE5"/>
-      <path d="M165 178 L182.5 163 L200 178 Z" fill="#3A352F"/>
-      <!-- Windows main -->
-      <rect x="118" y="180" width="10" height="10" rx="1" fill="#2D2926"/>
-      <rect x="134" y="180" width="10" height="10" rx="1" fill="#2D2926"/>
-      <rect x="150" y="180" width="10" height="10" rx="1" fill="#2D2926"/>
+    <!-- Cabin — based on BigDog blueprint, front elevation -->
+    <g transform="translate(18, 0)">
+      <!-- LEFT WING — lower, angled roof sloping left -->
+      <rect x="70" y="180" width="34" height="20" fill="#F0EBE5"/>
+      <path d="M66 180 L104 180 L104 170 Z" fill="#F0EBE5"/>
+      <path d="M70 180 L104 180 L104 173 Z" fill="#3A352F"/>
+      <!-- Left wing windows -->
+      <rect x="76" y="184" width="8" height="10" rx="0.5" fill="#2D2926"/>
+      <rect x="89" y="184" width="8" height="10" rx="0.5" fill="#2D2926"/>
+      <rect x="77" y="185" width="6" height="8" rx="0.5" fill="#C4652E" opacity="0.2"/>
+      <rect x="90" y="185" width="6" height="8" rx="0.5" fill="#C4652E" opacity="0.2"/>
+
+      <!-- MAIN CENTER SECTION — tall steep gable -->
+      <rect x="104" y="165" width="56" height="35" fill="#F0EBE5"/>
+      <!-- Steep gable roof -->
+      <path d="M98 165 L132 125 L166 165 Z" fill="#F0EBE5"/>
+      <path d="M102 165 L132 130 L162 165 Z" fill="#3A352F"/>
+
+      <!-- 4 narrow vertical gable windows -->
+      <rect x="117" y="140" width="5" height="20" rx="0.5" fill="#2D2926"/>
+      <rect x="124" y="137" width="5" height="23" rx="0.5" fill="#2D2926"/>
+      <rect x="131" y="137" width="5" height="23" rx="0.5" fill="#2D2926"/>
+      <rect x="138" y="140" width="5" height="20" rx="0.5" fill="#2D2926"/>
+      <!-- Gable window glow -->
+      <rect x="118" y="141" width="3" height="18" rx="0.5" fill="#C4652E" opacity="0.25"/>
+      <rect x="125" y="138" width="3" height="21" rx="0.5" fill="#C4652E" opacity="0.25"/>
+      <rect x="132" y="138" width="3" height="21" rx="0.5" fill="#C4652E" opacity="0.25"/>
+      <rect x="139" y="141" width="3" height="18" rx="0.5" fill="#C4652E" opacity="0.25"/>
+
+      <!-- 4 wider rectangular windows below -->
+      <rect x="109" y="170" width="10" height="13" rx="0.5" fill="#2D2926"/>
+      <rect x="122" y="170" width="10" height="13" rx="0.5" fill="#2D2926"/>
+      <rect x="135" y="170" width="10" height="13" rx="0.5" fill="#2D2926"/>
+      <rect x="148" y="170" width="10" height="13" rx="0.5" fill="#2D2926"/>
       <!-- Window glow -->
-      <rect x="119" y="181" width="8" height="8" rx="1" fill="#C4652E" opacity="0.3"/>
-      <rect x="135" y="181" width="8" height="8" rx="1" fill="#C4652E" opacity="0.3"/>
-      <rect x="151" y="181" width="8" height="8" rx="1" fill="#C4652E" opacity="0.3"/>
+      <rect x="110" y="171" width="8" height="11" rx="0.5" fill="#C4652E" opacity="0.25"/>
+      <rect x="123" y="171" width="8" height="11" rx="0.5" fill="#C4652E" opacity="0.25"/>
+      <rect x="136" y="171" width="8" height="11" rx="0.5" fill="#C4652E" opacity="0.25"/>
+      <rect x="149" y="171" width="8" height="11" rx="0.5" fill="#C4652E" opacity="0.25"/>
+
       <!-- Door -->
-      <rect x="139" y="190" width="8" height="10" rx="1" fill="#2D2926"/>
-      <!-- Windows side -->
-      <rect x="172" y="183" width="8" height="8" rx="1" fill="#2D2926"/>
-      <rect x="185" y="183" width="8" height="8" rx="1" fill="#2D2926"/>
+      <rect x="128" y="188" width="8" height="12" rx="0.5" fill="#2D2926"/>
+
+      <!-- RIGHT WING — lower, angled roof sloping right -->
+      <rect x="160" y="180" width="34" height="20" fill="#F0EBE5"/>
+      <path d="M160 170 L160 180 L198 180 Z" fill="#F0EBE5"/>
+      <path d="M160 173 L160 180 L194 180 Z" fill="#3A352F"/>
+      <!-- Right wing windows -->
+      <rect x="166" y="184" width="8" height="10" rx="0.5" fill="#2D2926"/>
+      <rect x="179" y="184" width="8" height="10" rx="0.5" fill="#2D2926"/>
+      <rect x="167" y="185" width="6" height="8" rx="0.5" fill="#C4652E" opacity="0.2"/>
+      <rect x="180" y="185" width="6" height="8" rx="0.5" fill="#C4652E" opacity="0.2"/>
+
       <!-- Chimney -->
-      <rect x="155" y="155" width="6" height="14" fill="#F0EBE5"/>
-      <rect x="153" y="153" width="10" height="4" fill="#F0EBE5"/>
+      <rect x="148" y="133" width="5" height="16" fill="#F0EBE5"/>
+      <rect x="146" y="131" width="9" height="4" rx="0.5" fill="#F0EBE5"/>
       <!-- Smoke -->
-      <circle cx="158" cy="148" r="3" fill="#8A8279" opacity="0.4"/>
-      <circle cx="161" cy="142" r="2.5" fill="#8A8279" opacity="0.3"/>
-      <circle cx="159" cy="136" r="2" fill="#8A8279" opacity="0.2"/>
+      <circle cx="150" cy="126" r="2.5" fill="#8A8279" opacity="0.35"/>
+      <circle cx="153" cy="120" r="2" fill="#8A8279" opacity="0.25"/>
+      <circle cx="151" cy="115" r="1.5" fill="#8A8279" opacity="0.15"/>
+
+      <!-- Front deck -->
+      <rect x="100" y="200" width="68" height="3" fill="#F0EBE5" opacity="0.5"/>
     </g>
 
     <!-- Ground/snow -->
