@@ -74,6 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Hero slideshow ---
+  const slides = document.querySelectorAll('.hero-slide');
+  if (slides.length > 1) {
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 6000);
+  }
+
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {

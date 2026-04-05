@@ -171,20 +171,21 @@ p + p { margin-top: 1em; }
   color: var(--color-white);
   overflow: hidden;
 }
-.hero-triptych {
+.hero-slideshow {
   position: absolute;
   inset: 0;
-  display: grid;
-  grid-template-columns: 1fr 1.4fr 1fr;
-  gap: 3px;
   z-index: -2;
 }
-.hero-panel {
+.hero-slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
 }
-.hero-panel--main {
-  background-position: center 30%;
+.hero-slide.active {
+  opacity: 1;
 }
 .hero-overlay {
   position: absolute;
@@ -634,12 +635,6 @@ p + p { margin-top: 1em; }
 
   .section { padding: 72px 0; }
   .hero-content { padding-bottom: 60px; }
-  .hero-triptych {
-    grid-template-columns: 1fr;
-  }
-  .hero-panel:not(.hero-panel--main) {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
