@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* --- Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap');
 
 /* --- Variables --- */
 :root {
@@ -22,11 +22,11 @@
   --color-border:     #3A352F;
   --color-overlay:    rgba(10, 8, 6, 0.45);
 
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body:    'Montserrat', 'Segoe UI', sans-serif;
+  --font-heading: 'Lora', Georgia, serif;
+  --font-body:    'Raleway', 'Segoe UI', sans-serif;
 
   --max-width:    1200px;
-  --header-h:     80px;
+  --header-h:     120px;
 }
 
 /* --- Reset --- */
@@ -98,14 +98,14 @@ p + p { margin-top: 1em; }
   gap: 12px;
   text-decoration: none;
 }
-.logo svg { height: 40px; width: auto; }
+.logo-badge { height: 110px; width: auto; }
 .logo-text {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-white);
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  /* Hidden — badge logo already contains the name */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
 }
 
 .nav-links {

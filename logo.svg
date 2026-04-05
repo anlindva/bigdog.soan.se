@@ -1,14 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" fill="none">
-  <!-- Mountain silhouette -->
-  <path d="M8 44 L22 16 L30 28 L38 12 L46 28 L54 20 L62 44 Z" fill="#C4652E" opacity="0.9"/>
-  <path d="M4 44 L18 22 L26 32 L34 18 L42 32 L50 24 L58 44 Z" fill="#F0EBE5"/>
-  <!-- Cabin silhouette on mountain -->
-  <rect x="28" y="30" width="14" height="10" rx="1" fill="#1A1714"/>
-  <path d="M26 31 L35 24 L44 31 Z" fill="#1A1714"/>
-  <!-- Chimney -->
-  <rect x="38" y="25" width="3" height="6" rx="0.5" fill="#1A1714"/>
-  <!-- Text: BIGDOG -->
-  <text x="74" y="36" font-family="'Playfair Display', Georgia, serif" font-size="32" font-weight="700" fill="#F0EBE5" letter-spacing="3">BIGDOG</text>
-  <!-- Subtitle -->
-  <text x="74" y="50" font-family="'Montserrat', sans-serif" font-size="10" font-weight="400" fill="#8A8279" letter-spacing="4" text-transform="uppercase">FJÄLLVILLA I IDRE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 340" fill="none">
+  <!-- Shield outline -->
+  <path d="M150 10 L275 60 L275 200 Q275 270 150 320 Q25 270 25 200 L25 60 Z" fill="#C4652E"/>
+  <path d="M150 18 L268 65 L268 198 Q268 263 150 312 Q32 263 32 198 L32 65 Z" fill="#2D2926"/>
+
+  <!-- Sun rays -->
+  <clipPath id="shield-clip">
+    <path d="M150 18 L268 65 L268 198 Q268 263 150 312 Q32 263 32 198 L32 65 Z"/>
+  </clipPath>
+  <g clip-path="url(#shield-clip)">
+    <!-- Sky gradient -->
+    <rect x="32" y="18" width="236" height="200" fill="#3A352F"/>
+
+    <!-- Sun rays from behind mountains -->
+    <g opacity="0.35">
+      <polygon points="150,95 130,18 170,18" fill="#C4652E"/>
+      <polygon points="150,95 80,18 110,18" fill="#C4652E"/>
+      <polygon points="150,95 190,18 220,18" fill="#C4652E"/>
+      <polygon points="150,95 32,30 60,18" fill="#C4652E"/>
+      <polygon points="150,95 240,18 268,30" fill="#C4652E"/>
+      <polygon points="150,95 32,60 32,90" fill="#C4652E"/>
+      <polygon points="150,95 268,60 268,90" fill="#C4652E"/>
+    </g>
+
+    <!-- Sun circle -->
+    <circle cx="150" cy="100" r="22" fill="#C4652E" opacity="0.6"/>
+    <circle cx="150" cy="100" r="16" fill="#F0EBE5" opacity="0.8"/>
+
+    <!-- Mountains background -->
+    <path d="M32 200 L80 120 L120 155 L170 90 L220 140 L268 110 L268 200 Z" fill="#1A1714"/>
+    <!-- Mountains foreground -->
+    <path d="M32 200 L90 140 L130 170 L180 115 L230 160 L268 135 L268 200 Z" fill="#2D2926"/>
+    <!-- Snow caps -->
+    <path d="M170 90 L158 108 L165 105 L175 95 L185 108 L180 105 Z" fill="#F0EBE5" opacity="0.7"/>
+    <path d="M268 110 L255 125 L262 122 L268 115 Z" fill="#F0EBE5" opacity="0.5"/>
+
+    <!-- Trees left -->
+    <g fill="#1A1714">
+      <polygon points="58,200 65,170 72,200"/>
+      <polygon points="58,190 65,162 72,190"/>
+      <polygon points="74,200 82,165 90,200"/>
+      <polygon points="74,188 82,156 90,188"/>
+    </g>
+
+    <!-- Trees right -->
+    <g fill="#1A1714">
+      <polygon points="218,200 225,172 232,200"/>
+      <polygon points="218,192 225,164 232,192"/>
+      <polygon points="234,200 242,168 250,200"/>
+      <polygon points="234,190 242,160 250,190"/>
+    </g>
+
+    <!-- Cabin main -->
+    <g>
+      <!-- Main building -->
+      <rect x="110" y="172" width="55" height="28" fill="#F0EBE5"/>
+      <!-- Roof -->
+      <path d="M105 172 L137.5 148 L170 172 Z" fill="#F0EBE5"/>
+      <path d="M108 172 L137.5 152 L167 172 Z" fill="#3A352F"/>
+      <!-- Side building -->
+      <rect x="165" y="178" width="35" height="22" fill="#F0EBE5"/>
+      <!-- Side roof -->
+      <path d="M162 178 L182.5 160 L203 178 Z" fill="#F0EBE5"/>
+      <path d="M165 178 L182.5 163 L200 178 Z" fill="#3A352F"/>
+      <!-- Windows main -->
+      <rect x="118" y="180" width="10" height="10" rx="1" fill="#2D2926"/>
+      <rect x="134" y="180" width="10" height="10" rx="1" fill="#2D2926"/>
+      <rect x="150" y="180" width="10" height="10" rx="1" fill="#2D2926"/>
+      <!-- Window glow -->
+      <rect x="119" y="181" width="8" height="8" rx="1" fill="#C4652E" opacity="0.3"/>
+      <rect x="135" y="181" width="8" height="8" rx="1" fill="#C4652E" opacity="0.3"/>
+      <rect x="151" y="181" width="8" height="8" rx="1" fill="#C4652E" opacity="0.3"/>
+      <!-- Door -->
+      <rect x="139" y="190" width="8" height="10" rx="1" fill="#2D2926"/>
+      <!-- Windows side -->
+      <rect x="172" y="183" width="8" height="8" rx="1" fill="#2D2926"/>
+      <rect x="185" y="183" width="8" height="8" rx="1" fill="#2D2926"/>
+      <!-- Chimney -->
+      <rect x="155" y="155" width="6" height="14" fill="#F0EBE5"/>
+      <rect x="153" y="153" width="10" height="4" fill="#F0EBE5"/>
+      <!-- Smoke -->
+      <circle cx="158" cy="148" r="3" fill="#8A8279" opacity="0.4"/>
+      <circle cx="161" cy="142" r="2.5" fill="#8A8279" opacity="0.3"/>
+      <circle cx="159" cy="136" r="2" fill="#8A8279" opacity="0.2"/>
+    </g>
+
+    <!-- Ground/snow -->
+    <path d="M32 200 L268 200 L268 220 L32 220 Z" fill="#F0EBE5" opacity="0.15"/>
+  </g>
+
+  <!-- Banner ribbon -->
+  <path d="M18 230 L40 222 L40 258 L18 250 Z" fill="#A8521F"/>
+  <path d="M282 230 L260 222 L260 258 L282 250 Z" fill="#A8521F"/>
+  <rect x="38" y="222" width="224" height="36" rx="2" fill="#C4652E"/>
+
+  <!-- Banner text -->
+  <text x="150" y="248" font-family="'Georgia', serif" font-size="30" font-weight="700" fill="#F0EBE5" text-anchor="middle" letter-spacing="4">BigDog</text>
+
+  <!-- Bottom circle with text -->
+  <circle cx="150" cy="282" r="24" fill="#C4652E"/>
+  <circle cx="150" cy="282" r="20" fill="#2D2926"/>
+  <text x="150" y="289" font-family="'Georgia', serif" font-size="14" font-weight="700" fill="#F0EBE5" text-anchor="middle">IDRE</text>
+
+  <!-- Decorative dots on banner -->
+  <circle cx="62" cy="240" r="3" fill="#F0EBE5" opacity="0.4"/>
+  <circle cx="238" cy="240" r="3" fill="#F0EBE5" opacity="0.4"/>
 </svg>
