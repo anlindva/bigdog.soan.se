@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilder — BIGDOG Fjällvilla i Idre</title>
+  <meta name="description" content="Se bilder på BIGDOG fjällvilla i Idre. Interiör, exteriör och utsikt över fjällen.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header scrolled">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 50 50" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 40 L18 14 L26 24 L34 10 L42 24 L50 18 L56 40 Z" fill="#C4652E" opacity="0.85"/>
+          <path d="M0 40 L14 18 L22 28 L30 14 L38 28 L46 20 L52 40 Z" fill="#F0EBE5"/>
+          <rect x="22" y="27" width="10" height="9" rx="1" fill="#2D2926"/>
+          <path d="M20 28 L27 22 L34 28 Z" fill="#2D2926"/>
+          <rect x="30" y="22" width="2.5" height="5" rx="0.5" fill="#2D2926"/>
+        </svg>
+        <span class="logo-text">BIGDOG</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#om">Om stugan</a>
+        <a href="galleri.html" class="active">Bilder</a>
+        <a href="index.html#kalender">Tillgänglighet</a>
+        <a href="index.html#priser">Priser</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Meny">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <h1>Bilder</h1>
+    <p>Klicka på en bild för att förstora</p>
+  </div>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="gallery-full">
+        <div class="gallery-item"><img src="pictures/gallery-1.jpg" alt="Braskamin med vedförvaring och TV"></div>
+        <div class="gallery-item"><img src="pictures/gallery-2.jpg" alt="Stugan i kvällsbelysning, vinter"></div>
+        <div class="gallery-item"><img src="pictures/gallery-3.jpg" alt="Eldkorg i solnedgång"></div>
+        <div class="gallery-item"><img src="pictures/gallery-5.jpg" alt="Stugan i snö, blå himmel"></div>
+        <div class="gallery-item"><img src="pictures/gallery-6.jpg" alt="Vardagsrum med TV och braskamin"></div>
+        <div class="gallery-item"><img src="pictures/gallery-7.jpg" alt="Vardagsrum, mysig kväll med utsikt"></div>
+        <div class="gallery-item"><img src="pictures/gallery-8.jpg" alt="Vinterpanorama, utsikt från stugan"></div>
+        <div class="gallery-item"><img src="pictures/gallery-9.jpg" alt="Fjällandskap med stugan"></div>
+        <div class="gallery-item"><img src="pictures/gallery-11.jpg" alt="Exteriör höst"></div>
+        <div class="gallery-item"><img src="pictures/gallery-12.jpg" alt="Eldkorg i solnedgång, närbild"></div>
+        <div class="gallery-item"><img src="pictures/gallery-13.jpg" alt="Stugan i djupsnö, blå himmel"></div>
+        <div class="gallery-item"><img src="pictures/gallery-15.jpg" alt="Stugan upplyst på natten"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Stäng">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Föregående">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Nästa">&#8250;</button>
+    <img src="" alt="Förstorad bild">
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 BIGDOG Fjällvilla i Idre. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
